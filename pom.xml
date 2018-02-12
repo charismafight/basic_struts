@@ -8,12 +8,23 @@
     <artifactId>basic_struts</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
-        <finalName>basic-struts</finalName>
+        <finalName>basic_struts</finalName>
         <plugins>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.4.7.v20170914</version>
+                <configuration>
+                    <webApp>
+                        <contextPath>/${project.artifactId}</contextPath>
+                    </webApp>
+                    <stopKey>CTRL+C</stopKey>
+                    <stopPort>8999</stopPort>
+                    <scanIntervalSeconds>10</scanIntervalSeconds>
+                    <scanTargets>
+                        <scanTarget>src/main/webapp/WEB-INF/web.xml</scanTarget>
+                    </scanTargets>
+                </configuration>
             </plugin>
 
         </plugins>
@@ -22,7 +33,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
+        <java.version>1.9</java.version>
 
         <struts2.version>2.5.14.1</struts2.version>
         <log4j2.version>2.10.0</log4j2.version>
