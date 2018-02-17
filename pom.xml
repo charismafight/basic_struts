@@ -38,7 +38,6 @@
                     </dependency>
                 </dependencies>
             </plugin>
-
         </plugins>
     </build>
 
@@ -87,6 +86,12 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
             <version>2.10.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-config-browser-plugin -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-config-browser-plugin</artifactId>
+            <version>2.5.14.1</version>
         </dependency>
     </dependencies>
 </project>

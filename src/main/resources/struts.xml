@@ -15,5 +15,23 @@
         <action name="hello" class="com.lee.www.action.HelloWorldAction" method="execute">
             <result name="success">/HelloWorld.jsp</result>
         </action>
+
+        <action name="register" class="com.lee.www.action.RegisterAction" method="execute">
+            <result name="success">/thankyou.jsp</result>
+            <result name="input">/register.jsp</result>
+        </action>
+
+        <!--全局异常处理略-->
+        <!--<global-results>-->
+        <!--<result name="securityerror">/securityerror.jsp</result>-->
+        <!--<result name="error">/error.jsp</result>-->
+        <!--</global-results>-->
+
+        <!--<global-exception-mappings>-->
+        <!--<exception-mapping exception="org.apache.struts.register.exceptions.SecurityBreachException"-->
+        <!--result="securityerror"/>-->
+        <!--<exception-mapping exception="java.lang.Exception" result="error"/>-->
+        <!--</global-exception-mappings>-->
     </package>
+
 </struts>
