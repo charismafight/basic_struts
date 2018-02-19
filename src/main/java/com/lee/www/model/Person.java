@@ -38,6 +38,16 @@ public class Person {
     private String email;
     private int age;
 
+    public String getSport() {
+        return sport;
+    }
+
+    public void setSport(String sport) {
+        this.sport = sport;
+    }
+
+    private String sport;
+
     @Override
     public String toString() {
         return "First Name: " + getFirstName() + " Last Name:  " + getLastName() +

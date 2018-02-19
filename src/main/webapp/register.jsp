@@ -17,6 +17,7 @@
     <s:textfield key="personBean.firstName"/>
     <s:textfield name="personBean.email" label="Email"/>
     <s:textfield name="personBean.age" label="Age"/>
+    <s:select list="sports"/>
     <s:submit/>
 </s:form>
 </body>
